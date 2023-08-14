@@ -3,7 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff;
+        }
+
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            transform: rotate(-45deg);
+            margin-top: 10px;
+        }
+
+        .left-half,
+        .right-half {
+            position: absolute;
+            width: 52px;
+            height: 80px;
+            background-color: #000;
+            border-radius: 50px 50px 0 0;
+        }
+
+        .left-half {
+            left: 50px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        .right-half {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        .message {
+            text-align: center;
+            margin-top: 20px;
+            color: #000;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
     <title>Birthday Wishes</title>
 </head>
 <body>
@@ -17,5 +70,6 @@
     </div>
 </body>
 </html>
+
 
 
